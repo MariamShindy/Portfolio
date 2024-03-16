@@ -1,0 +1,210 @@
+/**all pages css**/
+*{
+  margin : 0;
+  padding : 0 ;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --primaryColor :#F0FFFF;
+  --secondaryColor :#00008B;
+  --lightColor:#1434A4;
+  --bgColor-1 :#89CFF0	;
+  --padding:8%;
+}
+
+html{
+  font-size: 16px;
+  color:var(--lightColor);
+}
+
+/*main page css*/
+.home{
+  width:100%;
+  height: 100vh;
+  background-color: var(--bgColor-1);
+  display: flex;
+  flex-direction: column;
+}
+section nav h2 span{
+  color:var(--bgColor-1);
+}
+section nav h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+nav {
+  position:absolute;
+  width: 100%;
+  background-color: var(--primaryColor);
+  z-index: 9999;
+  padding-top: 1.3rem;
+  padding-left: var(--padding);
+  padding-right :var(--padding) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  display: inline-block;
+  margin:0.8rem 1.5rem;
+}
+nav ul li a{
+  color : var(--lightColor);
+  text-decoration: none;
+  transition: 0.4s;
+}
+nav ul li a:hover{
+  color:var(--bgColor-1);
+}
+.content{
+  flex-grow: 1;
+  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainContent{
+  position: relative;
+  bottom: 40px;
+}
+.mainContent span{
+  color:var(--primaryColor);
+}
+h1{
+  font-size: 4.65rem;
+  margin:1.7rem 0 ;
+}
+h3{
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+h4{
+  font-size: 1.22rem;
+  letter-spacing: 0.3rem;
+}
+.Social{
+  margin-top:3.5rem;
+}
+.Social img{
+  margin-right: 3.5rem;
+  margin-left: 1.5rem;
+  transition: 0.4s;
+  width: 3rem;
+  filter: grayscale(30%);
+}
+.Social img:hover {
+  transform: scale(1.2);
+}
+.imgcontent{
+  width:45%;
+  height: 90%;
+  position: relative;
+}
+.imgcontent img{
+  position: absolute;
+  bottom: -300px;
+  align-self:flex-end;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rem;
+  height: 60rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.imgcontent:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+/* About section */
+.about-container {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--primaryColor);
+}
+.about-container img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Skiils section */
+.skills-container {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--bgColor-1);
+}
+.skills-container img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.skills-container ul {
+  display: flex;
+  justify-content: center;
+}
+.skills-container li {
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+/* Project section */
+.projects-container {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--primaryColor);
+}
+.project {
+  margin-bottom: 30px;
+}
+.project img{
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Resume section */
+.resume-container {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--bgColor-1);
+}
+.resume-container .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* footer section*/
+footer {
+  background-color: var(--bgColor-1);
+  padding: 20px;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 10px;
+}
+
+/*Common code*/
+section div h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+section p{
+  font-size: 20px;
+}
+.btn{
+  background-color:var(--primaryColor);
+  color:var(--lightColor);
+  text-decoration: none;
+  font-weight: bold;
+  padding :0.81rem 1.87rem;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid
+}
