@@ -112,11 +112,11 @@ h4{
   width: 40rem;
   height: 60rem;
   border-radius: 50%;
-  transition: transform 0.3s ease;
+  /*transition: transform 0.3s ease;*/
 }
 .imgcontent:hover{
   cursor: pointer;
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
 }
 
 
